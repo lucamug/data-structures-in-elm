@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Overivew of data structures in Elm" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data structures in Elm</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        td,
+        th {
+            padding: .5em
+        }
+
+        td {
+            font-family: monospace;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Data structures in Elm</h1>
+
+    <table border="1px">
+        <tr>
+
+            <th></th>
+            <th><a href="http://elm-lang.org/docs/records">Record</a></th>
+            <th><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/List">List</a></th>
+            <th><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Tuple">Tuple</a></th>
+            <th><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Array">Array</a></th>
+            <th><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Set">Set</a></th>
+            <th><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Dict">Dict</a></th>
+        </tr>
+        <tr>
+            <th>Create empty</th>
+            <td>{}</td>
+            <td>[]</td>
+            <td>()</td>
+            <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Array#empty">Array.empty</a></td>
+            <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Set#empty">Set.empty</a></td>
+            <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Dict#empty">Dict.empty</a></td>
+        </tr>
+
+        <tr>
+            <th>Create</th>
+            <td>{ a = 1 }</td>
+            <td>[ 1, 2 ]</td>
+            <td>("a", 1)</td>
+            <td>Array.fromList [ 1, 2 ]</td>
+            <td>Set.fromList [ 1, 2 ]</td>
+            <td>Dict.fromList [ ("a", 1) ]</td>
+        </tr>
+
+        <tr>
+            <th>isEmpty</th>
+            <td>N/A</td>
+            <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/List#isEmpty">List.isEmpty</a></td>
+            <td>N/A</td>
+            <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Array#isEmpty">Array.isEmpty</a></td>
+            <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Set#isEmpty">Set.isEmpty</a></td>
+            <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Dict#isEmpty">Dict.isEmpty</a></td>
+        </tr>
+
+        <tr>
+            <th>map</th>
+            <td>N/A</td>
+            <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/List#map">List.map</a></td>
+            <td>N/A</td>
+            <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Array#map">Array.map</a></td>
+            <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Set#map">Set.map</a></td>
+            <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Dict#map">Dict.map</a></td>
+        </tr>
+
+        <tr>
+            <th>Getter</th>
+            <td>record.a<br>.a record</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Dict#get">Dict.get</a></td>
+        </tr>
+
+        <tr>
+            <th>Setter</th>
+            <td>{ record | a = 2 }</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Dict#insert">Dict.insert</a>
+                <br>
+                <a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Dict#update">Dict.update</a>
+            </td>
+        </tr>
+
+    </table>
+
+    <h2>Resources</h2>
+    <ul>
+        <li><a href="http://tech.noredink.com/post/140646140878/data-structures-in-elm">http://tech.noredink.com/post/140646140878/data-structures-in-elm</a></li>
+        <li><a href="https://dennisreimann.de/articles/elm-data-structures-list-array-set-dict.html">https://dennisreimann.de/articles/elm-data-structures-list-array-set-dict.html</a></li>
+        <li><a href="http://ohanhi.com/master-elm-2-data-structures.html">http://ohanhi.com/master-elm-2-data-structures.html</a></li>
+    </ul>
+
+</body>
+
+</html>
